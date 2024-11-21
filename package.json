@@ -1,8 +1,8 @@
 {
-  "homepage": "https://GrazonJS.github.io/",
+  "homepage": "https://GrazonJS.github.io/Web-Host/",
   "name": "portfolio-oct-version",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.2.0",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
