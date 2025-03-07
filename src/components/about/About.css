@@ -1,0 +1,116 @@
+.about {
+  width: 100%;
+  min-height: 100vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.real-left {
+  min-width: 45%;
+}
+.left-box {
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid var(--sub-border);
+  background-color: var(--sub-color);
+  border-radius: 20px;
+  font-size: var(--fs);
+  color: rgb(197, 196, 196);
+}
+.left-box img {
+  margin: 20px 0;
+  width: 100%;
+  border-radius: 15px;
+}
+.left-box h2 {
+  font-size: var(--heading-size);
+  color: var(--heading-color);
+}
+.right-side {
+  min-width: 46%;
+}
+.responsive-box {
+  display: none;
+}
+.box {
+  width: 100%;
+  background-color: var(--sub-color);
+  font-size: var(--fs);
+  color: rgb(197, 196, 196);
+  border: 1px solid var(--sub-border);
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 10px;
+}
+.box h3 {
+  margin-bottom: 7px;
+  font-size: 22px;
+  color: var(--heading-color);
+}
+.box:hover,
+.left-box:hover {
+  border: 1px solid rgb(43, 29, 108);
+}
+.about button {
+  margin-left: 20px;
+  font-size: 16px;
+  padding: 7px 10px;
+}
+.resume-link {
+  text-decoration: none;
+  color: rgb(129, 101, 251);
+}
+.resume-link:hover {
+  color: white;
+}
+
+/* ----------media queries-------------- */
+@media (max-width: 1200px) {
+  .left-side {
+    min-width: 40%;
+    font-size: var(--fs);
+  }
+  .right-side {
+    font-size: var(--fs);
+  }
+}
+/* ----------media queries-------------- */
+@media (max-width: 900px) {
+  .special-box {
+    display: none;
+  }
+  .responsive-box {
+    display: block;
+  }
+}
+/* ----------media queries-------------- */
+@media (max-width: 768px) {
+  .about {
+    padding: 0 15%;
+    flex-direction: column;
+  }
+  .special-box {
+    display: block;
+  }
+  .responsive-box {
+    display: none;
+  }
+  .right-side {
+    margin-bottom: 20px;
+  }
+  .real-left {
+    width: 100%;
+  }
+  .left-box {
+    margin: 0px;
+  }
+}
+/* ----------media queries-------------- */
+@media (max-width: 650px) {
+  .container {
+    padding: 0px 10%;
+  }
+}

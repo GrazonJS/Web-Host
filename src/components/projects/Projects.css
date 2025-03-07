@@ -1,0 +1,92 @@
+.projects {
+  min-height: 85vh;
+  width: 100%;
+  text-align: center;
+  color: white;
+  background-size: 100% 100%;
+  background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px,
+    0px 0px;
+  background-image: radial-gradient(
+      75% 75% at -11% 110%,
+      #000000ff 63%,
+      #00000038 85%
+    ),
+    radial-gradient(75% 75% at 78% 102%, #000000ff 55%, #00000038 70%),
+    radial-gradient(75% 75% at 93% 25%, #000000b5 45%, #00000000 71%),
+    radial-gradient(75% 75% at 12% 15%, #000000ff 29%, #00000000 71%),
+    radial-gradient(75% 75% at 63% 78%, #4b00e3ff 64%, #00000000 72%),
+    radial-gradient(75% 75% at 5% 97%, #5b1be0ff 54%, #00000000 70%),
+    radial-gradient(75% 75% at 50% 50%, #000000ff 0%, #000000ff 100%);
+}
+.projects h1 {
+  padding: 10px 0;
+  font-size: 50px;
+}
+.slide-container {
+  padding: 0px 50px;
+  margin-top: 50px;
+}
+.slide {
+  height: auto;
+  padding: 20px;
+  backdrop-filter: blur(20px);
+  background-color: rgba(31, 29, 33, 0.5);
+  border: 1px solid var(--sub-border);
+  border-radius: 15px;
+  text-align: center;
+}
+.slide img {
+  max-width: 100%;
+  border-radius: 13px;
+  border: 1px solid var(--sub-border);
+}
+
+.slide h2 {
+  font-size: 30px;
+  margin-top: 10px;
+}
+.slide p {
+  padding-top: 20px;
+  color: rgb(197, 196, 196);
+}
+.slide button {
+  font-size: 16px;
+  padding: 7px 10px;
+  margin: 20px 10px 0px 10px;
+}
+.slide button a {
+  text-decoration: none;
+  color: white;
+}
+.slick-slide > div {
+  margin: 0 10px;
+}
+.slick-dots > li {
+  background-color: rgb(31, 31, 31);
+  top: 20px;
+  border-radius: 50%;
+}
+.slick-dots > li ::before {
+  background-color: rgb(202, 202, 202);
+  border-radius: 50%;
+  width: 10px;
+}
+.slick-active > button::before {
+  background-color: rgb(87, 62, 254);
+}
+@media (max-width: 600px) {
+  .slide-container {
+    padding: 0px 30px;
+  }
+}
+@media (max-width: 500px) {
+  .projects {
+    max-height: 100vh;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    opacity: 0.8;
+  }
+}

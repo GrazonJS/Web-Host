@@ -1,0 +1,171 @@
+.skills {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #000000;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-size: 100% 100%;
+  background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px,
+    0px 0px, 0px 0px, 0px 0px, 0px 0px;
+  background-image: radial-gradient(
+      75% 75% at 18% 94%,
+      #000000ff 22%,
+      #0000001c 55%
+    ),
+    radial-gradient(75% 75% at 7% 26%, #000000ff 22%, #0000001c 55%),
+    radial-gradient(75% 75% at 97% 43%, #000000ff 28%, #0000001c 60%),
+    radial-gradient(75% 75% at 56% 101%, #000000ff 30%, #0000001c 64%),
+    radial-gradient(75% 75% at 71% 52%, #5400ffff 0%, #0000001c 41%),
+    radial-gradient(75% 75% at 78% 74%, #5400fffc 17%, #00000000 70%),
+    radial-gradient(75% 75% at 28% 77%, #2d10d8ff 20%, #0000001c 56%),
+    radial-gradient(75% 75% at 42% 53%, #8b3bfaff 40%, #0000001c 57%),
+    radial-gradient(75% 75% at 55% 76%, #5400ffff 0%, #0000001c 66%),
+    radial-gradient(75% 75% at 50% 50%, #000000ff 0%, #000000ff 100%);
+}
+.skills h2 {
+  font-size: 50px;
+}
+.grid-container {
+  display: grid;
+  width: 70%;
+  height: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  grid-template-areas:
+    "aws figma react react"
+    "git nodejs react react"
+    "informatica informatica linux mysql"
+    " langchain javascript java java"
+    " redux tailwind java java";
+}
+.item {
+  width: 100%;
+  backdrop-filter: blur(30px);
+  align-items: center;
+  padding: 15px 5px;
+  backdrop-filter: blur(20px);
+  background-color: rgba(31, 29, 33, 0.5);
+  border: 1px solid rgba(95, 95, 95, 0.7);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.item img {
+  width: 55px;
+  text-align: center;
+  padding-bottom: 20px 0;
+}
+.item p {
+  font-size: 18px;
+  font-weight: 600;
+  padding-top: 3px;
+  color: var(--heading-color);
+}
+.aws {
+  grid-area: aws;
+}
+.react {
+  grid-area: react;
+}
+.informatica {
+  grid-area: informatica;
+}
+.java {
+  grid-area: java;
+}
+.figma {
+  grid-area: figma;
+}
+.git {
+  grid-area: git;
+}
+.nodejs {
+  grid-area: nodejs;
+}
+.linux {
+  grid-area: linux;
+}
+.mysql {
+  grid-area: mysql;
+}
+.langchain {
+  grid-area: langchain;
+}
+.javascript {
+  grid-area: javascript;
+}
+.redux {
+  grid-area: redux;
+}
+.tailwind {
+  grid-area: tailwind;
+}
+.aws:hover,
+.informatica:hover,
+.linux:hover {
+  border: 1px solid rgb(221, 119, 2);
+}
+.nodejs:hover,
+.langchain:hover,
+.git:hover {
+  border: 1px solid rgb(25, 128, 1);
+}
+.javascript:hover {
+  border: 1px solid rgb(192, 192, 2);
+}
+.react:hover,
+.tailwind:hover {
+  border: 1px solid rgb(1, 176, 207);
+}
+.figma:hover,
+.mysql:hover,
+.java:hover {
+  border: 1px solid rgb(97, 124, 223);
+}
+.redux:hover {
+  border: 1px solid rgb(104, 55, 183);
+}
+
+/* ---------- media queries ------------ */
+@media (max-width: 800px) {
+  .skills {
+    flex-direction: column;
+  }
+  .grid-container {
+    min-width: 90%;
+  }
+}
+/* ----------- media queries ------------ */
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "aws figma react "
+      "informatica informatica linux "
+      "git nodejs mysql"
+      " langchain javascript java "
+      " redux tailwind java ";
+  }
+}
+/* ----------- media queries ------------ */
+@media (max-width: 460px) {
+  .container {
+    padding: 0px 5%;
+  }
+  .skills {
+    min-height: 95vh;
+  }
+  .item {
+    padding: 10px 3px;
+  }
+  .item p {
+    font-size: 15px;
+  }
+}
